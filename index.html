@@ -88,11 +88,14 @@ function changeColor() {
 function changeSize() {
 
    var x = Math.floor(Math.random() * 99 +1);
+   var y = Math.floor(Math.random() * 299 +1);
+
    var str1 = x.toString(10);
+   var str2 = y.toString(10)
 
    document.getElementsByClassName("rect")[0].style.height = str1.concat("px");
    
-   document.getElementsByClassName("rect")[0].style.width = str1.concat("px");
+   document.getElementsByClassName("rect")[0].style.width = str2.concat("px");
   
 }
 
